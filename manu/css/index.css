@@ -1,0 +1,239 @@
+body{
+    background-color: yellow;
+    
+}
+
+.container{
+    align-items: center;
+    justify-content: center;
+    display: grid;
+    border: 1px solid black;
+}
+
+li{
+    list-style-type: none;
+    background: white;
+    padding: 10px;
+    margin: 5px;
+    text-align: center;
+
+}
+.container-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+span{
+    color: red;
+    border-right: 1px solid red;
+
+}
+.logo h5{
+    color: black;
+}
+a{
+    text-decoration: none;
+}
+
+.explore h5{
+    background: red;
+    padding: 5px;
+    border-radius: 5px;
+}
+.explore a{
+    text-decoration: none;
+    color: black;
+}
+
+.explore:hover{
+    color: white;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.accordian{
+    width: 65%;
+    background-color: yellow;
+    padding: 30px;
+    border-radius: 30px;
+    
+}
+
+.accordian .accordian-title{
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.accordian .content-container .question{
+    padding: 18px 0px;
+    font-size: 22px;
+    cursor: pointer;
+    border-bottom: 1px solid #000;
+
+    position: relative;
+}
+
+.accordian .content-container .question::after{
+    content: '+';
+    position: absolute;
+    right: -5px;
+    margin-top: -55px;
+    
+}
+
+.accordian .content-container .answer{
+    padding-top: 15px;
+    font-size: 15px;
+    line-height: 1.5;
+    width: 100%;
+    height: 0px;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.accordian .content-container.active .answer{
+    height: 100%;
+}
+
+.explore-more{
+    text-align: center;
+    
+}
+.accordian .content-container.active .question{
+    transition: .5s;
+}
+
+.accordian .content-container.active .question::after{
+    content: '-';
+    font-size: 30px;
+    transition: .5s;
+}
+
+header, form{
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form input,form button{
+    padding: 0.5rem;
+    font-size: 2rem;
+    border: none;
+}
+
+form button{
+    color: #d88771;
+    background: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+form button:hover{
+    background: #d88771;
+    color: white;
+}
+
+.todo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.todo-list{
+    min-width: 30%;
+    list-style-type: none;
+}
+
+.todo{
+    margin: 0.5rem;
+    background: white;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: ease all 1s;
+}
+
+.todo-li{
+    flex: 1;
+}
+.trash-btn, .completed-btn{
+    background: red;
+    color: white;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.complete-btn{
+    background: green;
+    padding: 1em;
+    cursor: pointer;
+}
+
+.fa-trash, .fa-check{
+    pointer-events: none;
+}
+
+.completed{
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+.fall{
+    transform: translateY(8rem) rotateZ(20deg);
+    opacity: 0;
+}
+
+select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    border: none;
+}
+
+
+.select{
+    margin: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+
+select{
+    color: #d88771;
+    width: 10rem;
+    cursor: pointer;
+    padding: 1rem;
+}
+.select::after{
+    content: '\25BC';
+    position: absolute;
+    background: #d88771;
+    top: 0;
+    right: 0;
+    padding: 1rem;
+    pointer-events: none;
+}
+.select::after{
+    background: white;
+    color: #d88771;
+}
+
+.container{
+    border: none;
+}
+
+.btn-btn{
+    display: flex;
+    justify-content: space-between;
+    float: right;
+    background: red;
+    color: #fff;
+    font-size: 15px;
+}
+.form-control{
+    padding: 20px;
+    font-size: 30px;
+}
